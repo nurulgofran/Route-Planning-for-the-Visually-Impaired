@@ -8,3 +8,12 @@ Technical milestones that must be completed in this project include:
 Algorithmic generation of navigational pathways in Python, depending on defined start and endpoint parameters.
 Real-time geospatial tracking to determine the immediate coordinates of the BVIP.
 Optical recording of the current coordinates and subsequent algorithmic evaluation to check the orientation of the sidewalk
+
+
+FAU Box Links
+
+input_video.mp4 : https://faubox.rrze.uni-erlangen.de/getlink/fi4SkMw7qgsHNDEmYtSQR5/input_video.mp4
+model.onnx : https://faubox.rrze.uni-erlangen.de/getlink/fiQHYEVH7FSYSk9pfskf8o/model.onnx
+trained on cityscapes model checkpoint : https://faubox.rrze.uni-erlangen.de/getlink/fiQxx8EmbRenukfSUVyJpY/trained_on_cityscapes.ckpt
+fine-tuned on mapillary model checkpoint :https://faubox.rrze.uni-erlangen.de/getlink/fiVwCRYbMxHR2ZnoxcNnXb/fine_tuned_mapillary.ckpt
+
