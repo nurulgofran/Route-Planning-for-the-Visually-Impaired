@@ -1,0 +1,2 @@
+model.onnx
+https://faubox.rrze.uni-erlangen.de/getlink/fiQHYEVH7FSYSk9pfskf8o/model.onnx
