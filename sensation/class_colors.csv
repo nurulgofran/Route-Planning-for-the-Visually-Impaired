@@ -1,0 +1,9 @@
+class_label,red,green,blue,Class_Names
+0,0,0,0,background
+1,128,64,128,road
+2,244,35,232,sidewalk
+3,250,170,30,traffic light
+4,220,220,0,traffic sign (front)
+5,220,20,60,person
+6,0,0,142,car
+7,119,11,32,bicycle
