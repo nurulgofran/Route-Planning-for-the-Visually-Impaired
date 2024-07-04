@@ -1,6 +1,3 @@
-Here is a professional README file based on the details you provided:
-
----
 
 # SENSATION: Sidewalk Environment Detection System for Assistive NavigaTION
 
@@ -102,7 +99,7 @@ This project is licensed under the MIT License. See the LICENSE file for more in
 
 ## Contact
 
-For questions or support, please contact the project team at [your email/contact information].
+For questions or support, please contact the project team at nurulgofran@gmail.com
 
 ## Links to Resources
 
@@ -112,5 +109,3 @@ For questions or support, please contact the project team at [your email/contact
 - [fine-tuned on mapillary model checkpoint](https://faubox.rrze.uni-erlangen.de/getlink/fiVwCRYbMxHR2ZnoxcNnXb/fine_tuned_mapillary.ckpt)
 
 ---
-
-Feel free to modify any section as necessary. This should provide a comprehensive overview of your project and serve as a useful guide for potential collaborators and users.
