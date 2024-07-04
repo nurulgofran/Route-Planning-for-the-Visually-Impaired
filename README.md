@@ -108,4 +108,18 @@ For questions or support, please contact the project team at nurulgofran@gmail.c
 - [trained on cityscapes model checkpoint](https://faubox.rrze.uni-erlangen.de/getlink/fiQxx8EmbRenukfSUVyJpY/trained_on_cityscapes.ckpt)
 - [fine-tuned on mapillary model checkpoint](https://faubox.rrze.uni-erlangen.de/getlink/fiVwCRYbMxHR2ZnoxcNnXb/fine_tuned_mapillary.ckpt)
 
+#### Contribution Guidelines
+
+```markdown
+## Contributing
+
+Thank you for considering contributing to SENSATION! To get started,
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes.
+4. Commit your changes (`git commit -m 'Add new feature'`).
+5. Push to the branch (`git push origin feature-branch`).
+6. Create a pull request.
+
 ---
