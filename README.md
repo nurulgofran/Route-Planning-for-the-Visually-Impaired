@@ -3,24 +3,41 @@
 
 ## Project Overview
 
-The **Road Scene Understanding for the Visually Impaired** initiative aims to enhance the mobility capabilities of blind or visually impaired persons (BVIPs) by ensuring safer and more efficient navigation on pedestrian pathways. Our research team is advancing the development of the **Sidewalk Environment Detection System for Assistive NavigaTION (SENSATION)**.
+The **Road Scene Understanding for the Visually Impaired** initiative aims to develop a Sidewalk Environment Detection System for enhancing the mobility capabilities of visually impaired people through the combination of GPS systems and image segmentation techniques refined for sidewalk recognition.
 
-The primary objective is to refine a specialized apparatus, a chest-mounted bag equipped with an NVIDIA Jetson Nano, which serves as the core computational unit. This device integrates a variety of sensors, including:
-- **Tactile Feedback Mechanisms** (vibration motors) for direction indication
-- **Optical Sensors** (webcam) for environmental data acquisition
-- **Wireless Communication Modules** (Wi-Fi antenna) for internet connectivity
-- **Geospatial Positioning Units** (GPS sensors) for real-time location tracking
+## Methods
 
-Despite promising preliminary designs, several technical challenges persist that warrant further investigation.
-
-## Project Goals
-
-We are actively seeking student collaborators to refine the Jetson Nano-fueled SENSATION system. Participants are expected to:
-1. Generate navigational pathways in Python based on defined start and endpoint parameters.
-2. Implement real-time geospatial tracking to determine immediate coordinates of BVIPs.
-3. Conduct optical recording of current coordinates and evaluate sidewalk orientation algorithmically.
+- Using Valhalla routing API and GPS tracker signals to determine direction instructions.
+- Training DeepLabv3 ResNet50 image segmentation model on Cityscapes dataset (5000 images, 50 cities) in Pytorch.
+- Fine-tuning the model on Mapillary dataset (1000 images) to improve sidewalk detection.
+- Combining GPS system and image segmentation model to assist navigation.
 
 The project will be tested from the main train station in Erlangen to the University Library of Erlangen-Nuremberg (Schuhstrasse 1a).
+
+## Features
+
+### Core Components
+
+- Sidewalk detection using DeepLabv3+ semantic segmentation
+- Real-time navigation instructions using Valhalla routing
+- Position estimation and speed calculation
+- Intelligent sidewalk guidance system
+
+### System Architecture
+
+#### Input Processing
+
+- Video input support (testing mode)
+- Camera input support (live mode)
+- GPS coordinate processing
+- Command-line interface for flexible input handling
+
+#### Navigation Features
+
+- Three-column sidewalk detection method
+- Automated navigation commands
+- Real-time speed estimation
+- Combined routing and visual guidance
 
 ## Technical Requirements
 
@@ -108,9 +125,6 @@ For questions or support, please contact the project team at nurulgofran@gmail.c
 - [trained on cityscapes model checkpoint](https://faubox.rrze.uni-erlangen.de/getlink/fiQxx8EmbRenukfSUVyJpY/trained_on_cityscapes.ckpt)
 - [fine-tuned on mapillary model checkpoint](https://faubox.rrze.uni-erlangen.de/getlink/fiVwCRYbMxHR2ZnoxcNnXb/fine_tuned_mapillary.ckpt)
 
-#### Contribution Guidelines
-
-```markdown
 ## Contributing
 
 Thank you for considering contributing to SENSATION! To get started,
@@ -123,3 +137,4 @@ Thank you for considering contributing to SENSATION! To get started,
 6. Create a pull request.
 
 ---
+
