@@ -1,5 +1,6 @@
 import requests
 
+
 # Function to get Valhalla instructions for the entire route
 def get_valhalla_instructions(valhalla_base_url, start_location, end_location):
     # Make a request to Valhalla to get route instructions
@@ -12,7 +13,7 @@ def get_valhalla_instructions(valhalla_base_url, start_location, end_location):
         "directions_options": {
             "units": "kilometers",
             "language": "en",  # Language for the turn-by-turn directions
-            "format": "osrm"
+            "format": "osrm",
         },
     }
 
@@ -25,12 +26,14 @@ def get_valhalla_instructions(valhalla_base_url, start_location, end_location):
         # Extract locations, instructions and duration for the route
         steps = valhalla_data["routes"][0]["legs"][0]["steps"]
         for step in steps:
-            valhalla_instructions.append({
+            valhalla_instructions.append(
+                {
                     "duration": step["duration"],
                     "instruction": step["maneuver"]["instruction"],
-                    "location": step["maneuver"]["location"][::-1]
-                })
-    
+                    "location": step["maneuver"]["location"][::-1],
+                }
+            )
+
     else:
         print(f"Error: {response.status_code} - {response.text}")
 
